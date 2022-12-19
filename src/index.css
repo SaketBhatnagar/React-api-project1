@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* nav {
+  background-color: red;
+  height: 100px;
+} */
+
+body {
+  /* background-image: linear-gradient(
+    to right top,
+    rgb(0, 0, 101),
+    rgb(100, 0, 137),
+    rgb(81, 0, 169),
+    rgb(0, 234, 255)
+  ); */
+  background-attachment: fixed;
+  animation-name: box;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box {
+  from {
+    background-image: linear-gradient(
+      to right top,
+      rgb(0, 0, 101),
+      rgb(100, 0, 137),
+      rgb(81, 0, 169),
+      rgb(0, 234, 255)
+    );
+  }
+  to {
+    background-image: linear-gradient(
+      to right top,
+
+      rgb(0, 233, 255),
+      rgb(0, 0, 101),
+      rgb(100, 0, 137),
+      rgb(81, 0, 169)
+    );
+  }
+}
+
+.card-Block article {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 200px;
+  /* display: none; */
+  text-align: center;
+  border: 5px solid hsla(0, 0%, 100%, 0.529);
+  transition: all 0.5s;
+}
+.card h2 {
+  color: aliceblue;
+  margin: 10px 0px;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  border: none;
+  box-shadow: 1px 1px 20px 5px white;
+}
+
+.card a {
+  display: block;
+  color: rgb(0, 249, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.card a:hover {
+  background-color: rgb(0, 249, 0);
+  color: Blue;
+}
+
+.card img {
+  width: 100%;
+}
